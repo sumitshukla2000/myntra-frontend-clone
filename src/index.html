@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Myntra Clone</title>
+</head>
+<body>
+    <div>
+        <nav class="w-full shadow-md py-4 static px-6">
+            <div class="flex justify-between items-center">
+
+                <div class="w-full flex justify-between items-center md:max-w-lg">
+                    <img src="./assets/logo.webp" class="h-12 " alt="logo">
+                    <div>
+                        <ul class="hidden md:flex">
+                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Men</li>
+                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Women</li>
+                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Kids</li>
+                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Beauty</li>
+                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Studio</li>
+                        </ul>
+                        <div id="menu" class=" md:hidden">
+                            <img src="./assets/burger.png" class="h-8 cursor-pointer" alt="">
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="flex items-center justify-evenly">
+                    <div class="flex relative">
+                        <div class="hidden sm:w-48 sm:block md:w-72 lg:w-96">
+                            <input type="text" class="w-full text-sm  bg-slate-200 px-12 py-2 rounded outline-slate-200 focus:outline focus:bg-white" placeholder="Search for Product">
+                        </div>
+                        <div class="absolute top-3 cursor-pointer left-3">
+                            <img src="./assets/search.png" class="h-4" alt="">
+                        </div>
+                    </div>
+                    <div class="hidden items-center pl-6 lg:flex">
+                        <img id="pro_btn" src="./assets/user.png" class="h-8 cursor-pointer" alt="">
+                        <img src="./assets/wishlist.png" class="h-8 cursor-pointer" alt="">
+                        <img src="./assets/bag.png" class="h-8 cursor-pointer" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="list" class="invisible absolute inset-x-0 bg-white w-9/12 mt-4 duration-150 ease-out mx-auto shadow-xl rounded border-1 border md:hidden"> 
+        <ul class="p-2">
+            <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Men</li>
+            <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Women</li>
+            <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Kids</li>
+            <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Beauty</li>
+            <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Studio</li>
+        </ul>
+    </div>
+    <!-- profile -->
+    <div class="w-full">
+        <div id="profile" class="invisible bg-white absolute right-5 ease-in-out inline-block shadow-xl"> 
+            <div class="px-6">
+                <section class="py-4 px-2 border-b border-slate-200">
+                    <h2 class="font-semibold">Welcome</h2>
+                    <p class="text-sm">To access acount and manage orders</p>
+                    <button class="py-2 mt-4 px-4 text-red-400 border border-slate-200 rounded hover:shadow-lg hover:border-red-400">Login/Signup</button>
+                </section>
+                <section>
+                    <div class="flex flex-col px-4 py-2 border-b text-sm border-slate-200">
+                    <a href="#" class="hover:font-bold py-1">Orders</a>
+                    <a href="#" class="hover:font-bold py-1">Wishlists</a>
+                    <a href="#" class="hover:font-bold py-1">Gift Cards</a>
+                    <a href="#" class="hover:font-bold py-1">Contact Us</a>
+                    <a href="#" class="hover:font-bold py-1">Myntra Insider</a>
+                </div>
+                </section>
+                <section>
+                    <div class="flex flex-col px-4 py-2 border-b text-sm  py-1border-slate-200">
+                        <a href="#" class="hover:font-bold py-1">Myntra Credit</a>
+                        <a href="#" class="hover:font-bold py-1">Coupons</a>
+                        <a href="#" class="hover:font-bold py-1">Saved Cards</a>
+                        <a href="#" class="hover:font-bold py-1">Saved VPA</a>
+                        <a href="#" class="hover:font-bold py-1">Saved Addresses</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- offers section -->
+
+    <section class="py-4">
+        <div>
+            <img src="./assets/header.JPG" class="h-20 w-full mx-auto cursor-pointer  md:h-48 sm:h-32 sm:w-11/12" alt="">
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div>
+            <img src="./assets/header2.JPG" class="md:w-10/12 mx-auto cursor-pointer sm:hidden  md:h-72 md:block sm:w-11/12" alt="">
+        </div>
+    </section>
+
+    <!-- festive crazy offers section -->
+    <section class="py-4">
+        <div class="container mx-auto">  
+            <h1 class="py-2 text-3xl text-center font-semibold font-main">Festive Crazy Offers</h1>
+            <div class="py-4 flex justify-center items-center gap-4 flex-wrap">
+                <img src="./assets/snip1.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
+                <img src="./assets/snip2.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
+                <img src="./assets/snip3.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
+                <img src="./assets/snip4.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
+                <img src="./assets/snip5.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
+            </div>
+        </div>
+    </section>
+
+        <!-- header-3 -->
+    <section class="py-4 container mx-auto"> 
+        <div>
+            <img src="./assets/header3.JPG" class="h-60 w-11/12 mx-auto" alt="">
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
