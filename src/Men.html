@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.webp">
+    
+    <title>Mens Clothing</title>
+</head>
+
+<body>
+    <div class="fixed bg-white w-full">   
+        <nav class="w-full shadow-md py-4 px-6">
+            <div class="flex justify-between items-center">
+
+                <div class="w-full flex justify-between items-center md:max-w-lg">
+                    <img src="./assets/logo.webp" class="h-12 " alt="logo">
+                    <div>
+                        <ul class="hidden md:flex">
+                            <a href="./Men.html" class="px-4 duration-300 cursor-pointer text-md font-semibold hover:font-bold">Men</a>
+                            <a href="women.html" class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Women
+                            </a>
+                            <a class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Kids
+                            </a>
+                            <a class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Beauty
+                            </a>
+                            <a class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Studio
+                            </a>
+                        </ul>
+                        <div id="menu" class=" md:hidden">
+                            <img src="./assets/burger.png" class="h-8 cursor-pointer" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-evenly">
+                    <div class="flex relative">
+                        <div class="hidden sm:w-48 sm:block md:w-72 lg:w-96">
+                            <input type="text"
+                                class="w-full text-sm  bg-slate-200 px-12 py-2 rounded outline-slate-200 focus:outline focus:bg-white"
+                                placeholder="Search for Product">
+                        </div>
+                        <div class="absolute top-3 cursor-pointer left-3">
+                            <img src="./assets/search.png" class="h-4" alt="">
+                        </div>
+                    </div>
+                    <div class="hidden items-center pl-6 lg:flex">
+                        <img id="pro_btn" src="./assets/user.png" class="h-8 cursor-pointer" alt="">
+                        <img src="./assets/wishlist.png" class="h-8 cursor-pointer" alt="">
+                        <img src="./assets/bag.png" class="h-8 cursor-pointer" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="list"
+            class="invisible flex flex-col absolute inset-x-0 bg-white w-9/12 mt-4 duration-150 ease-out mx-auto shadow-xl rounded border-1 border md:hidden">
+        
+                <a href="./Men.html" class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Men</a>
+                <a href="./women.html" class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Women</a>
+                <a class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Kids</a>
+                <a class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Beauty</a>
+                <a class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Studio</a>
+        
+        </div>
+        <!-- profile -->
+        <div class="w-full">
+            <div id="profile" class="invisible bg-white absolute right-5 ease-in-out inline-block shadow-xl">
+                <div class="px-6">
+                    <section class="py-4 px-2 border-b border-slate-200">
+                        <h2 class="font-semibold">Welcome</h2>
+                        <p class="text-sm">To access acount and manage orders</p>
+                        <button
+                            class="py-2 mt-4 px-4 text-red-400 border border-slate-200 rounded hover:shadow-lg hover:border-red-400">Login/Signup</button>
+                    </section>
+                    <section>
+                        <div class="flex flex-col px-4 py-2 border-b text-sm border-slate-200">
+                            <a href="#" class="hover:font-bold py-1">Orders</a>
+                            <a href="#" class="hover:font-bold py-1">Wishlists</a>
+                            <a href="#" class="hover:font-bold py-1">Gift Cards</a>
+                            <a href="#" class="hover:font-bold py-1">Contact Us</a>
+                            <a href="#" class="hover:font-bold py-1">Myntra Insider</a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="flex flex-col px-4 py-2 border-b text-sm  py-1border-slate-200">
+                            <a href="#" class="hover:font-bold py-1">Myntra Credit</a>
+                            <a href="#" class="hover:font-bold py-1">Coupons</a>
+                            <a href="#" class="hover:font-bold py-1">Saved Cards</a>
+                            <a href="#" class="hover:font-bold py-1">Saved VPA</a>
+                            <a href="#" class="hover:font-bold py-1">Saved Addresses</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container mx-auto">
+        <h1 class="text-3xl text-center font-main pt-24">Men's Collection</h1>
+        <div id="cont" class="flex justify-center items-center flex-wrap py-6 gap-4">
+
+            <div class="rounded-md shadow-lg overflow-hidden  h-70 w-56">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/IMG_Academy_Logo.svg/640px-IMG_Academy_Logo.svg.png"
+                    class="mx-auto h-48 object-cover" alt="">
+                <div class="bg-white mt-2">
+                    <p class="text-md text-center font-avg px-2 ">Desctiption of the product</p>
+                    <p class="text-md font-avg text-center px-2 ">Price : 1.8</p>
+                    <button
+                        class="rounded border border-slate-200 block mx-auto text-sm px-2 py-1 text-cente my-2 uppercase duration-300 hover:shadow-md hover:scale-105">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            const menu = document.getElementById("menu");
+            const list = document.getElementById("list");
+            const profile_button = document.getElementById("pro_btn");
+            const profile = document.getElementById("profile");
+            const black = document.getElementById("black");
+            const container = document.getElementById("container");
+            const cont = document.getElementById("cont");
+            menu.addEventListener("click" , ()=>{
+    list.classList.toggle('invisible');
+    list.classList.toggle("mouseOut");
+    black.classList.toggle("hidden");
+});
+
+profile_button.addEventListener("click" , ()=>{
+        profile.classList.toggle("invisible");
+        // black.classList.toggle("hidden");
+}); 
+            var dataArr = []
+            fetch("https://fakestoreapi.com/products/category/men's clothing")
+                .then(req => req.json())
+                .then(data => {
+                    for (var key in data) {
+                        dataArr.push({
+                            id: data[key].id,
+                            title: data[key].title,
+                            price: data[key].price,
+                            image: data[key].image
+                        })
+                    }
+                    // console.log(dataArr);
+                    dataArr.map(item => {
+                        const div = document.createElement("div");
+                        div.classList.add('rounded-md', 'cursor-pointer', 'shadow-lg', 'overflow-hidden', 'h-80', 'w-56' , 'duation-150','hover:shadow-xl');
+                        cont.appendChild(div);
+                        const img = document.createElement('img');
+                        img.classList.add('mx-auto', 'h-48', 'object-cover');
+                        img.src = item.image;
+                        div.appendChild(img);
+
+                        const div2 = document.createElement("div");
+                        div2.classList.add("bg-white","mt-2");
+                        const p = document.createElement("p");
+                        p.classList.add("text-md" , "text-center", "font-avg" , "px-2");
+                        p.textContent = item.price
+                        const p1 = document.createElement("p");
+                        p1.classList.add("text-xs", "font-avg", "text-center", "px-2");
+                        p1.textContent = item.title
+                        const button = document.createElement("button");
+                        button.textContent = "Add to cart"
+                        button.classList.add("rounded", "border", "border-slate-200", "block", "mx-auto","text-sm", "px-2", "py-1", "text-center", "my-2", "uppercase", "duration-300", "hover:shadow-md", "hover:scale-105");
+                        div2.appendChild(p)
+                        div2.appendChild(p1)
+                        div2.appendChild(button);
+                        div.appendChild(div2)
+                    })
+                })
+        </script>
+
+</body>
+
+</html>

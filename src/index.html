@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.webp">
     <title>Myntra Clone</title>
 </head>
 
 <body>
-    <div>
+    <div class="fixed bg-white w-full">   
         <nav class="w-full shadow-md py-4 static px-6">
             <div class="flex justify-between items-center">
 
@@ -17,15 +18,15 @@
                     <img src="./assets/logo.webp" class="h-12 " alt="logo">
                     <div>
                         <ul class="hidden md:flex">
-                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Men</li>
-                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Women
-                            </li>
-                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Kids
-                            </li>
-                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Beauty
-                            </li>
-                            <li class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Studio
-                            </li>
+                            <a href="./Men.html" class="px-4 duration-300 cursor-pointer text-md font-semibold hover:font-bold">Men</a>
+                            <a href="women.html" class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Women
+                            </a>
+                            <a class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Kids
+                            </a>
+                            <a class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Beauty
+                            </a>
+                            <a class="px-4  duration-300 cursor-pointer text-md font-semibold hover:font-bold">Studio
+                            </a>
                         </ul>
                         <div id="menu" class=" md:hidden">
                             <img src="./assets/burger.png" class="h-8 cursor-pointer" alt="">
@@ -53,14 +54,14 @@
             </div>
         </nav>
         <div id="list"
-            class="invisible absolute inset-x-0 bg-white w-9/12 mt-4 duration-150 ease-out mx-auto shadow-xl rounded border-1 border md:hidden">
-            <ul class="p-2">
-                <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Men</li>
-                <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Women</li>
-                <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Kids</li>
-                <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Beauty</li>
-                <li class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Studio</li>
-            </ul>
+            class="invisible flex flex-col absolute inset-x-0 bg-white w-9/12 mt-4 duration-150 ease-out mx-auto shadow-xl rounded border-1 border md:hidden">
+        
+                <a href="./Men.html" class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Men</a>
+                <a href="./women.html" class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Women</a>
+                <a class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Kids</a>
+                <a class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Beauty</a>
+                <a class="px-4 py-2 text-right cursor-pointer text-md font-semibold hover:font-bold">Studio</a>
+        
         </div>
         <!-- profile -->
         <div class="w-full">
@@ -98,7 +99,7 @@
     <!-- offers section -->
 
     <section class="py-4">
-        <div>
+        <div class="mt-24">
             <img src="./assets/header.JPG" class="h-20 w-full mx-auto cursor-pointer  md:h-48 sm:h-32 sm:w-11/12"
                 alt="">
         </div>
@@ -139,7 +140,7 @@
                 <img src="./assets/cat1.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
                 <img src="./assets/cat2.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
                 <img src="./assets/cat3.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
-                <img src="./assets/cat4.JPG" class="h-60 cursor-pointer duration-hover:scale-105" alt="">
+                <img src="./assets/cat4.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
                 <img src="./assets/cat5.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
                 <img src="./assets/cat6.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
                 <img src="./assets/cat7.JPG" class="h-60 cursor-pointer duration-300 hover:scale-105" alt="">
@@ -160,7 +161,7 @@
             <!-- products -->
             <div class="py-6 flex justify-center items-center gap-8 flex-wrap">
                 <!-- Product -->
-                <div class="cursor-pointer rounded-lg duration-300 overflow-hidden w-36 h-60 shadow-lg hover:shadow-xl hover:scale-110">
+                <div class="cursor-pointer rounded-lg duration-300 overflow-hidden w-32 h-60 shadow-lg hover:shadow-xl hover:scale-110">
                     <img src="./assets/products/pro1.jpg" class="object-cover overflow-hidden mx-auto h-48" alt="">
                     <p class="text-md py-2 text-center bg-white">Shirts</p>
                 </div>
